@@ -291,7 +291,10 @@ function hashing(){
     	uncompressbin = hex2a(uncompress);
     	outputsha256 = SHA256(uncompressbin);	
     	outbin = hex2a(outputsha256);
-    	outputripemd160 = RMDstring(outbin);	
+    	outputripemd160 = RMDstring(outbin);
+		if(stop == true){
+			exit;
+		}
 		if (satoshiKeys.indexOf(outputripemd160) != -1){
     		lr = bigInt(key);
     		lt = "It's a Match!!!!!!";

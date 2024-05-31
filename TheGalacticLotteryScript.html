@@ -5,6 +5,9 @@
 			<meta content="utf-8" http-equiv="encoding">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 			<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+			<script>
+				var stop =false
+			</script>
 			<title>The Galactic Lottery and Satoshi Lost Keys - Run Script</title>
 		</head>
 		<body>
@@ -28,6 +31,8 @@
 								<li>in case the script finds a match to one of satoshi's lost private keys, the script will print the winning private key in bitcoin WIF format and finish running. to claim your reward copy the winning private key and restore it on any bitcoin wallet. </li>
 								&nbsp;
 								<li> for more information about the galactic lottery script you can read our <a href="http://www.thegalacticlottery.com/#content">white paper </a> or audit the script on <a href="https://github.com/" >github</a>.</li>
+								&nbsp;
+								<li>to stop the calculation so you don't accidentally win 1ms before you closed the page, click this button: <button onclick="stop=true;">button</button> </li>
 							</ul>
 						</div>
 					</div>
